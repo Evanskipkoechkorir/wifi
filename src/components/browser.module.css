@@ -1,0 +1,13 @@
+.browseContainer {
+  background-color: rgb(231, 203, 203);
+  box-shadow: 3px 4px 7px rgb(83, 68, 68);
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: -8px;
+}
+.browseH {
+  height: 90%;
+}

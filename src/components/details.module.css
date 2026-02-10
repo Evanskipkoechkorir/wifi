@@ -1,0 +1,145 @@
+.detailsContainer {
+  background-color: rgb(231, 203, 203);
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 3px 4px 7px rgb(83, 68, 68);
+}
+
+.detailsHeader {
+  text-align: center;
+  font-weight: lighter;
+  padding: 10px;
+}
+
+.detailsInput {
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  font-size: 23px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.detailsButton {
+  margin-top: 15px;
+  width: 55%;
+  height: 40px;
+}
+
+
+@media (max-width: 480px) {
+  .detailsContainer {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .detailsHeader {
+    font-size: 18px;
+  }
+
+  .detailsInput {
+    width: 90%;
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .detailsButton {
+    width: 80%;
+    font-size: 14px;
+    height: 35px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .detailsContainer {
+    width: 85%;
+    padding: 25px;
+  }
+
+  .detailsHeader {
+    font-size: 19px;
+  }
+
+  .detailsInput {
+    width: 70%;
+    font-size: 20px;
+  }
+
+  .detailsButton {
+    width: 65%;
+    font-size: 15px;
+    height: 38px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .detailsContainer {
+    width: 75%;
+  }
+
+  .detailsHeader {
+    font-size: 20px;
+  }
+
+  .detailsInput {
+    width: 65%;
+    font-size: 22px;
+  }
+
+  .detailsButton {
+    width: 60%;
+    font-size: 16px;
+    height: 40px;
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .detailsContainer {
+    width: 70%;
+  }
+
+  .detailsHeader {
+    font-size: 22px;
+  }
+
+  .detailsInput {
+    width: 60%;
+    font-size: 23px;
+  }
+
+  .detailsButton {
+    width: 55%;
+    font-size: 16px;
+    height: 40px;
+  }
+}
+
+
+@media (min-width: 1441px) {
+  .detailsContainer {
+    width: 60%;
+  }
+
+  .detailsHeader {
+    font-size: 24px;
+  }
+
+  .detailsInput {
+    width: 55%;
+    font-size: 24px;
+  }
+
+  .detailsButton {
+    width: 50%;
+    font-size: 17px;
+    height: 45px;
+  }
+}
