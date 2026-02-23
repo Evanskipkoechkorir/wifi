@@ -8,25 +8,22 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Disconnected from "./components/Disconnected";
 
-
 export default function App() {
   const [home, setHome] = useState("home");
   const [data, setData] = useState(null);
   const [code, setCode] = useState("77");
-  
 
   return (
     <div className="app">
-      <Header/>
+      <Header />
       {home === "home" && <Home setHome={setHome} setData={setData} />}
       {home === "details" && (
         <Details data={data} setHome={setHome} setCode={setCode} />
       )}
-      {home === "connected" && <Connected code={code} setHome={setHome} /> }
-      {home === "allowed" && <Browse  setHome={setHome}/>}
-      {home === "expired" && <Disconnected setHome={setHome}/>}
-      <Footer/>
+      {home === "connected" && <Connected code={code} setHome={setHome} />}
+      {home === "allowed" && <Browse setHome={setHome} />}
+      {home === "expired" && <Disconnected setHome={setHome} />}
+      <Footer />
     </div>
   );
 }
-
