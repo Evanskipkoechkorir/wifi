@@ -21,9 +21,9 @@ export default function Home({ setHome, setData }) {
   return (
     <div className={styles.homeContainer}>
       <div className={styles.each}>
-        <h3> Enter  Code Directly</h3>
+        <h3> Enter Code Directly</h3>
 
-        <button className={styles.code} onClick={() => handleCode()}>
+        <button className={styles.codeButton} onClick={() => handleCode()}>
           <i>Enter</i>
         </button>
       </div>
@@ -34,7 +34,9 @@ export default function Home({ setHome, setData }) {
         <h3>
           Time : <b>1 Hour</b>
         </h3>
-        <button onClick={() => handleClick(0)}>Select</button>
+        <button className={styles.button} onClick={() => handleClick(0)}>
+          Select
+        </button>
       </div>
       <div className={styles.each}>
         <h3>
@@ -43,7 +45,9 @@ export default function Home({ setHome, setData }) {
         <h3>
           Time : <b>2 Hours</b>
         </h3>
-        <button onClick={() => handleClick(1)}>Select</button>
+        <button className={styles.button} onClick={() => handleClick(1)}>
+          Select
+        </button>
       </div>
       <div className={styles.each}>
         <h3>
@@ -52,7 +56,9 @@ export default function Home({ setHome, setData }) {
         <h3>
           Time : <b>3 Hours</b>
         </h3>
-        <button onClick={() => handleClick(2)}>Select</button>
+        <button className={styles.button} onClick={() => handleClick(2)}>
+          Select
+        </button>
       </div>
       <div className={styles.each}>
         <h3>
@@ -61,7 +67,9 @@ export default function Home({ setHome, setData }) {
         <h3>
           Time : <b>5 Hours</b>
         </h3>
-        <button onClick={() => handleClick(3)}>Select</button>
+        <button className={styles.button} onClick={() => handleClick(3)}>
+          Select
+        </button>
       </div>
       <div className={styles.each}>
         <h3>
@@ -70,7 +78,9 @@ export default function Home({ setHome, setData }) {
         <h3>
           Time : <b>24 Hours</b>
         </h3>
-        <button onClick={() => handleClick(4)}>Select</button>
+        <button className={styles.button} onClick={() => handleClick(4)}>
+          Select
+        </button>
       </div>
     </div>
   );

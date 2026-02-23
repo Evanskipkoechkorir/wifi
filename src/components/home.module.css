@@ -1,132 +1,106 @@
 .homeContainer {
-  background-color: rgb(231, 203, 203);
-  box-shadow: 3px 4px 7px rgb(83, 68, 68);
   display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  padding: 10px;
-  overflow-y: auto;
-  padding-bottom: 100px;
-  width: 70%;
-  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
 }
+
 .each {
-  background-color: rgb(209, 201, 201);
-  margin: 6px;
-  border-radius: 6px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 220px;
+  padding: 1.5rem;
+  background-color: #e9f2ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
-h3 {
-  color: rgb(94, 75, 110);
+
+.each:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.heading {
+  font-size: 1.1rem;
+  font-weight: 500;
   text-align: center;
-  padding: 0;
-  margin: 0;
+  margin: 0.5rem 0;
 }
-b {
-  color: blue;
-}
-button {
-  padding: 3px 25px;
-  font-size: 20px;
-  border: none;
-  width: 70%;
-  margin: auto;
-  margin-bottom: 10px;
-  border-radius: 7px;
+
+.highlight {
   font-weight: bold;
-  background-color: rgb(88, 55, 81);
-  color: rgb(212, 217, 218);
+  color: #007bff;
 }
-button:hover {
+
+.button {
+  margin-top: 0.8rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
-  opacity: 0.7;
-}
-.code {
-  background-color: brown;
+  width: 100%;
+  transition: background-color 0.2s ease;
 }
 
-@media (max-width: 480px) {
-  .homeContainer {
-    width: 95%;
-    padding: 8px;
+.button:hover {
+  background-color: #0056b3;
+}
+
+.codeButton {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #00c4ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+  font-size: 1.05rem;
+}
+
+.codeButton:hover {
+  background-color: #009ecc;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+  .codeButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
   }
+}
 
+@media (max-width: 992px) {
   .each {
-    padding: 6px;
+    width: 180px;
+    padding: 1.2rem;
   }
-
-  h3 {
-    font-size: 12px;
-  }
-
-  button {
-    font-size: 16px;
-    padding: 5px 15px;
-    width: 80%;
+  .heading {
+    font-size: 1rem;
   }
 }
 
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .homeContainer {
-    width: 85%;
+@media (max-width: 576px) {
+  .each {
+    width: 100%;
+    padding: 1rem;
   }
-
-  h3 {
-    font-size: 13px;
+  .heading {
+    font-size: 0.95rem;
   }
-
-  button {
-    font-size: 17px;
-    width: 75%;
-  }
-}
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .homeContainer {
-    width: 75%;
-  }
-
-  h3 {
-    font-size: 14px;
-  }
-
-  button {
-    font-size: 18px;
-    width: 70%;
-  }
-}
-
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .homeContainer {
-    width: 70%;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  button {
-    font-size: 20px;
-    width: 70%;
-  }
-}
-
-
-@media (min-width: 1441px) {
-  .homeContainer {
-    width: 60%;
-  }
-
-  h3 {
-    font-size: 18px;
-  }
-
-  button {
-    font-size: 20px;
-    width: 65%;
+  .button {
+    padding: 0.5rem;
   }
 }
